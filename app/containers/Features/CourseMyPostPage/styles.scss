@@ -1,0 +1,47 @@
+@import 'app/assets/styles/colors.scss';
+
+.course-container{
+    width: 1280px;
+    padding-top: 30px;
+
+    .ant-form-item {
+        margin-bottom: 0px !important;
+    }
+
+    .small-size-hint{
+      font-size: smaller;
+  }
+
+    .feature-icon{
+        margin-bottom: 0 !important;
+        color: $color-light-primary;
+    }
+    ::placeholder {
+        color: rgb(124, 124, 124);
+      }
+// .currency-input{
+//   width: 15px;
+//   .ant-input-affix-wrapper{
+//      width: 15px;
+//   }
+ 
+// }
+.site-input-select-left{
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+      .select-input{
+          .ant-input-affix-wrapper {
+              padding-bottom: 0;
+              padding-top: 0;
+          }
+        .ant-form-item {
+            width: 100%;
+            // margin-bottom: -9px !important;
+        }
+      }
+    @media screen and (max-width: 1280px) {
+  width: 95vw;
+
+    }
+}

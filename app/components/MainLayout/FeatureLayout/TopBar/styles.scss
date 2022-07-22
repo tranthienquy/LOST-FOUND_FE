@@ -1,0 +1,75 @@
+@import 'app/assets/styles/colors.scss';
+
+.master-header {
+    width: 100%;
+    height: 80px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    transition: all 0.5s;
+    background-color: white;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.524);
+    @media screen and (max-width: 1280px) {
+      padding-left: 2vw;
+        }
+    .menu-button {
+      display: none;
+    }
+    .popover-children {
+      background-color: rgba(0, 0, 0, 0.274);
+    }
+    .navigation {
+        transition: all 0.5s;
+        font-size: 0.9rem;
+        margin-left: 2vw;
+        &__link {
+          text-decoration: none !important;
+          font-weight: bold;
+          margin-right: 3vw;
+        }
+        &__link:hover &__arrow {
+          transform: rotate(180deg);
+          margin-bottom: 0;
+        }
+        &__text:link,
+        &__text:visited {
+          color: white;
+        }
+        &__text:hover,
+        &__text:active {
+          color: $color-primary;
+        }
+        &__active {
+          color: $color-primary !important;
+        }
+        &__text {
+          color: black;
+          padding-top: 1px;
+          transition: all 0.5s;
+        }
+        &__sub {
+          text-decoration: none;
+          font-size: 14px !important;
+          margin-top: -15px;
+          font-weight: 500;
+        }
+        &__cart {
+          color: white;
+          cursor: pointer;
+        }
+        &__arrow {
+          color: black;
+          margin-left: 10px;
+          margin-bottom: 3px;
+        }
+      }
+      .lang-button{
+        .ant-btn:focus, .ant-btn:hover{
+        color: $color-primary !important;
+      } 
+      }
+      
+     
+  }

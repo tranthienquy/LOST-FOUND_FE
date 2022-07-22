@@ -1,0 +1,71 @@
+.course-detail-container{
+    width: 80vw;
+    padding-top: 30px;
+    .card-description{
+        border-radius: 10px;
+        border-color: rgb(192, 192, 192);
+        .ant-card-head{
+            padding-left: 25px;
+        }
+        .ant-card-body{
+            padding-left: 30px;
+
+        }
+    }
+    .introduction-card{
+        border-radius: 10px;
+        border-color: rgb(192, 192, 192);
+        img{
+            border-radius: 10px;
+            object-fit: contain;
+        }
+        button {
+            width: fit-content !important;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .watch-count {
+            border-radius: 10px;
+            border: 1px solid rgb(221, 221, 221);
+            width: 70px;
+            &__number{
+                    font-size: 35px;
+                    color: #4F4F4F;
+            }
+            &__currency {
+                font-size: 14px;
+                color: #B0B0B0;
+            }
+        }
+       
+    }
+    .not-register {
+        background-color: gray !important;
+    }
+    .course-card {
+        cursor: default;
+        position: sticky;
+        top: 20vh;
+        max-width: 250px;
+        border-radius: 10px;
+        border: 2px solid rgba(188, 188, 188, 0.25);
+        .ant-card-body{
+            padding: 0 !important;
+        }
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        width: 95vw;
+        .company-card{
+               max-width: 100%;
+               margin-top: 20px;
+        }
+     
+      
+          }
+        
+}
